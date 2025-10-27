@@ -12,6 +12,14 @@ import matplotlib.pyplot as plt
 
 st.title("State Graph Generator")
 
+# Legend section
+st.sidebar.markdown("### Legend")
+st.sidebar.markdown("- **Top Number:** Parent Sum")
+st.sidebar.markdown("- **Bottom Number:** Node Value")
+st.sidebar.markdown("- **Blue:** Positive Values")
+st.sidebar.markdown("- **Red:** Negative Values")
+st.sidebar.markdown("- **Gray:** Neutral or Unused Nodes")
+
 # === Inputs ===
 state_upper = st.number_input("Upper limit of the states (≠ 0)", value=5, step=1)
 state_lower = st.number_input("Lower limit of the states (≠ 0)", value=-5, step=1)
