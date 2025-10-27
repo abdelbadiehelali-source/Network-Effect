@@ -54,7 +54,7 @@ def run_program(state_upper, state_lower, algo):
         else:
             return "red"
 
-    first_value = random.choices([x for x in range(state_lower, state_upper, 1)] if x != 0)[0]
+    first_value = random.choices([x for x in range(state_lower, state_upper, 1) if x != 0])[0]
     G.add_node(node_counter, value=first_value)
     G.nodes[node_counter]['parent'] = 0
     layers.append([node_counter])
